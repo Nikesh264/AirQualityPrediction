@@ -34,14 +34,15 @@ This project is an **Air Quality Prediction** application developed using Flask 
 To set up this project locally, follow these steps:
 
 1. Clone the repository:
-git clone https://github.com/yourusername/AirQualityPrediction.git
+git clone https://github.com/Nikesh264/AirQualityPrediction.git
+
 cd AirQualityPrediction
 
-2. Create a virtual environment (optional but recommended):
+3. Create a virtual environment (optional but recommended):
 python -m venv venv
 
 
-3. Activate the virtual environment:
+4. Activate the virtual environment:
 - For Windows:
   ```
   venv\Scripts\activate
