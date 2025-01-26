@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+	<title>Air Quality Prediction</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Air Quality Prediction</h1>
+		<form id="pollutant-form" action="/predict" method="post">
+			<label for="city">Select City:</label>
+			<select name="city" id="city" required>
+				<option value="Warangal">Warangal</option>
+				<option value="Palwancha">Palwancha</option>
+				<option value="Rajendranagar">Rajendranagar</option>
+			</select>
+
+			<h3>Enter Pollutant Values:</h3>
+			<label for="pm25">PM2.5 (µg/m³):</label>
+			<input type="number" name="pm25" required>
+
+			<label for="pm10">PM10 (µg/m³):</label>
+			<input type="number" name="pm10" required>
+
+			<label for="no2">NO2 (µg/m³):</label>
+			<input type="number" name="no2" required>
+
+			<label for="so2">SO2 (µg/m³):</label>
+			<input type="number" name="so2" required>
+
+			<label for="co">CO (mg/m³):</label>
+			<input type="number" name="co" required>
+
+			<label for="o3">O3 (µg/m³):</label>
+			<input type="number" name="o3" required>
+
+			<button type="submit">Predict AQI</button>
+         </form>
+         <div id="error-message" class="error-message"></div>
+	</div>
+</body>
+</html>

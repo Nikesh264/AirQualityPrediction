@@ -1,0 +1,78 @@
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+}
+
+h3 {
+	color: #007bff; /* Bootstrap primary color */
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+input,
+select {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+}
+
+button {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #28a745; /* Green */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #218838; /* Darker green */
+}
+
+.error-message {
+	color: red;
+}
+
+.recommendations,
+.pollutant-analysis {
+	margin-top: 20px; 
+	padding: 15px; 
+	border-radius: 5px; 
+}
+
+.recommendations {
+	background-color: #e9ecef; /* Light grey background */
+	border-left: 5px solid #007bff; /* Blue left border */
+}
+
+.pollutant-analysis {
+	background-color: #fff3cd; /* Light yellow background */
+	border-left: 5px solid #ffc107; /* Yellow left border */
+}
